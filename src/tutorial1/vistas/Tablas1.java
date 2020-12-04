@@ -143,6 +143,11 @@ public class Tablas1 extends javax.swing.JFrame {
         });
 
         jbSalir.setText("Salir");
+        jbSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSalirActionPerformed(evt);
+            }
+        });
 
         jbGuardar.setText("Guardar");
         jbGuardar.setEnabled(false);
@@ -395,6 +400,11 @@ public class Tablas1 extends javax.swing.JFrame {
         llenarTabla();
         jbBorrar.setEnabled(false);
     }//GEN-LAST:event_jbBorrarActionPerformed
+
+    private void jbSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalirActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jbSalirActionPerformed
 
     /**
      * @param args the command line arguments
